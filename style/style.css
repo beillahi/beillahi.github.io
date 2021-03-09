@@ -173,7 +173,7 @@ ol li
 
 /* column 1 - contains sidebar items */
 #column1
-{ width: 198px;
+{ width: 130px;
   margin: 22px 0px 0px 0px;
   float: right;
   padding: 19px 19px 15px 19px;
@@ -181,7 +181,7 @@ ol li
 
 .sidebaritem
 { text-align: left;
-  width: 168px;
+  width: 110px;
   float: left;
   margin: 0px 0px 23px 0px;
   border: 1px solid;
@@ -226,7 +226,7 @@ ol li
 /* column 2 - page content */
 #column2
 { text-align: justify;
-  width: 508px;
+  width: 570px;
   float: left;
   padding: 2px 3px 15px 19px;
 }
