@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>beillahi</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+  <!-- **** layout stylesheet **** -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <!-- **** colour scheme stylesheet **** -->
+  <link rel="stylesheet" type="text/css" href="style/orange.css" />
+
+</head>
+
+<body>
+  <div id="main">
+   <!-- **** <div id="links"> **** -->
+      <!-- **** INSERT LINKS HERE **** -->
+      <!-- **** <a href="#">another link</a> | <a href="#">another link</a> | <a href="#">another link</a> | <a href="#">another link</a> **** -->
+    </div>**** -->
+    <div id="logo"><h1>Sidi Mohamed Beillahi</h1>  <!-- ****  <h2>&quot;What is it you would have me do, My Countrymen? Shall I purr like the kiten to satisfy you, or roar like the lion to please my self?&quot;<footer> khalil Gibran </footer> </h2>  **** -->
+	</div>
+    <div id="menu">
+      <ul>
+        <!-- **** INSERT NAVIGATION ITEMS HERE (use id="selected" to identify the page you're on **** -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+		<li><a href="resources/cv.pdf">CV</a></li>
+        <li><a id="selected" href="defense.html">PhD Thesis Defense</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div id="column1">
+        <div class="sidebaritem">
+          <h1>latest news</h1>
+          <!-- **** INSERT NEWS ITEMS HERE 
+          <h2>14.04.2020</h2>
+          <p>Updated my webpage.</p>
+          <h2>01.11.2016</h2>
+          <p>This is when my webpage was launched.</p>  **** -->
+         <!-- **** <p><a href="#">read more ...</a></p>
+          <p></p>
+          <p></p>
+          <h2>01.09.2006</h2>
+          <p>This is where you can put your latest news.</p>
+          <p><a href="#">read more ...</a></p>**** -->
+        </div>
+         <!-- ****<div class="sidebaritem">
+          <h1>additional links</h1>
+          <div class="sbilinks"> **** -->
+            <!-- **** INSERT ADDITIONAL LINKS HERE **** --> 
+           <!-- **** <ul>
+              <li><a href="http://www.openwebdesign.org">open web design</a></li>
+              <li><a href="http://www.w3schools.com/xhtml/default.asp">learn XHTML</a></li>
+              <li><a href="http://www.w3schools.com/css/default.asp">learn CSS</a></li>
+              <li><a href="http://www.mozilla.com/firefox">get firefox</a></li>
+            </ul>
+          </div> 
+        </div>**** -->
+        <!-- ****<div class="sidebaritem">
+          <h1>other information</h1> **** -->
+          <!-- **** INSERT OTHER INFORMATION HERE **** -->
+         <!-- **** <p>
+            This space can be used for additional information such as a contact phone number, address
+            or maybe even a graphic.
+          </p>
+        </div>**** -->
+      </div>
+      <div id="column2">
+      <!-- ****   <h1>introduction</h1> **** -->
+        <!-- **** INSERT PAGE CONTENT HERE **** -->
+        
+		<p></p>
+        <p></p>
+		<p>Information regarding PhD thesis defense.</p>
+<p><strong>Date</strong>: Monday, March 15th 2021.</p>
+<p><strong>Time</strong>: 14:30 (GMT+1, Paris).</p>
+<p><strong>Zoom meeting link</strong>: <a href="https://u-paris.zoom.us/j/81933320505?pwd=Z2dWWi9Xb2Q1YzJ0TjJHMkE5VElBUT09">zoom</a> </p>
+<p><strong>Zoom meeting ID</strong>: 819 3332 0505 </p>
+<p><strong>Zoom meeting passcode</strong>: 642222 </p>
+<p><strong>PhD manuscript</strong>: <a href="resources/thesis.pdf">thesis</a>.</p>
+<!-- **** <p><strong>Slides</strong>: they can be found <a href="../data/defense-slides.pdf">here</a>.</p>
+<p><strong>Recording</strong>: one can be found <a href="../data/defense-presentation-questions.mp4">here</a>.</p>**** -->
+<p><strong>Thesis jury</strong>:</p>
+<ul>
+<li>Ahmed Bouajjani, professor (advisor)</li>
+<li>Constantin Enea, associate professor (HDR) (advisor)</li>
+<li>Aarti Gupta, professor (reviewer)</li>
+<li>Roland Meyer, professor (reviewer)</li>
+<li>Parosh Aziz Abdulla, professor (examiner)</li>
+<li>Mihaela Sighireanu, professor (examiner)</li>
+<li>Viktor Vafeiadis, Tenured researcher (examiner)</li>
+</ul>
+<p></p>
+<p><strong>Title</strong>: Automated Verification of Programs Running on top of Distributed Systems.</p>
+<p></p>
+<p><strong>Abstract</strong>: Over the past decades, distributed software became an integral part of our society, being used in various domains like online banking or shopping, distance learning, supply chain, and telecommuting. Developing correct and efficient distributed systems is a major and timely challenge. The objective of this dissertation is to propose algorithmic techniques for improving the reliability of such software, focusing on applications ran on top of distributed storage systems like databases and blockchain. Databases allow applications to access data concurrently from multiple sites in a network. Blockchain is a cryptographically-secure distributed ledger that allows to perform irreversible actions between different parties without a trusted authority. 
+
+The effect of a set of database transactions executing in parallel is specified using a formalism called consistency model. For instance, serializability states that a set of transactions behave as if they were executed serially one after another even if they actually overlap in time. Although simple to understand, serializability carries a significant penalty on performance and modern databases implement weaker consistency models. In general, these weak models are more complex to reason about. In this dissertation, we investigate the problem of checking a property of applications called robustness. Given two comparable consistency models, an application is called robust if it has the same behaviors when ran on top of databases implementing these two models. This dissertation investigates the theoretical complexity of checking robustness in the context of several consistency models: causal consistency, prefix consistency, snapshot isolation, and serializability. It provides non-trivial reductions to a well-studied problem in formal verification, assertion checking, that enables the reuse of existing verification technology. Besides theoretical results, it proposes pragmatic approaches based on under/over-approximations that are evaluated on practical applications. 
+
+Applications ran on top of blockchain are deployed in the form of smart contracts that manipulate the blockchain state. Smart contracts are mainly used to govern trading in cryptoassets that are worth billions of US dollars, and bugs can lead to huge financial losses. Exacerbating the impact of these bugs is the fact that smart contracts cannot be modified once they are deployed on the blockchain. Applying techniques from formal verification to audit smart contracts can help in avoiding expensive bugs. However, since most smart contracts are not annotated with formal specifications, formal verification of functional properties is impeded. To overcome this problem, this dissertation investigates notions of refinement between smart contracts, which enable the re-use of verified contracts as specifications for other contracts, thus scaling up the overall verification effort.</p>
+<p></p>
+<p><strong>Résumé</strong>: Au cours des dernières décennies, les logiciels distribués ont pris une place centrale dans notre société. 
+Ils sont utilisés dans divers domaines tels que la gestion des transactions bancaires et des achats en ligne, le télétravail, et l'enseignement à distance. Développer des logiciels distribués corrects et efficaces est un défi majeur. L'objectif de cette thèse est de proposer des techniques algorithmiques pour améliorer la fiabilité de ces logiciels, en se concentrant sur les applications logiciels qui s'exécutent au-dessus des systèmes de stockage distribués comme les bases de données ou la blockchain. Les bases de données permettent à des applications d'accéder simultanément aux données grâce à plusieurs sites répartis sur un réseau. La blockchain est un registre de stockage distribué et sécurisé par des techniques cryptographiques qui permet d'effectuer des tâches irréversibles entre différentes entités sans autorité de confiance centrale.
+
+L'exécution en parallèle d'un ensemble de transactions sur des bases de données est spécifiée à l'aide d'un formalisme
+appelé le modèle de cohérence. Par exemple, le modèle de sérialisabilité indique qu'un ensemble de transactions se comporte comme si elles étaient exécutées en série l'un après l'autre, même si elles se chevauchent dans le temps. Bien que simple à comprendre, la sérialisabilité entraîne une pénalité significative en terme de performance. Pour cette raison les bases de données modernes mettent en oeuvre des modèles de cohérence plus faibles. En général, il est plus complexe de mener des raisonnement sur ces modèles faibles. Dans cette thèse, nous étudions le problème de la vérification d'une propriété des applications logiciels qui s'exécutent au-dessus des bases de données appelée la robustesse. Étant donné deux modèles de cohérence comparables, une application est dite robuste si elle a le
+même comportement lorsqu'elle est exécutée sur deux bases de données mettant en oeuvre les deux modèles de cohérence. Dans cette thèse, nous étudions la complexité théorique de la vérification de la robustesse dans le contexte de plusieurs modèles de cohérence: causal consistency, prefix consistency, snapshot isolation, et la sérialisabilité. Nous donnons des réductions non triviales à un problème bien étudié dans la littérature de la vérification formelle, la vérification des assertions, qui permet la réutilisation des technologies de vérification existantes. Outre des résultats théoriques, nous proposont aussi des approches basées sur des sous/sur-approximations que nous évaluons sur des applications pratiques. 
+
+Les applications logiciels exécutées au-dessus de la blockchain sont déployées sous la forme de smart contracts qui manipulent l'état de la blockchain. Les smart contracts sont principalement utilisés pour des operations basées sur des crypto-monnaies valant plusieurs milliards de dollars. Par conséquent, des erreurs dans les smart contracts peuvent entraîner d'énormes pertes financières. Ces erreurs sont exacerbées par le fait que les smart contracts ne peuvent pas être modifiés une fois qu'ils sont déployés sur la blockchain. 
+L'application des techniques de la vérification formelle pour auditer les smart contracts peut aider à éviter des erreurs coûteuses. Cependant, comme la plupart des smart contracts ne sont pas annotés avec leurs spécifications, la vérification formelle des propriétés fonctionnelles est entravée. Pour surmonter ce problème, nous explorons dans cette thèse les notions de raffinement entre smart contracts, qui permettent la réutilisation des smart contracts vérifiés comme spécifications pour d'autres smart contracts, améliorant ainsi l'effort global de vérification.</p>
+		
+        <div id="colour"> 
+        <!-- **** <p><b>Under Construction</b></p>**** -->
+        
+		 </div>
+        <!-- ****<p>
+          You can view my other 'open source' template designs
+          <a href="http://www.dcarter.co.uk/templates.html">here</a>.
+        </p>**** -->
+       <!-- **** <h1>alternative colour schemes</h1>
+        <p>Here are some alternative colour schemes for anyone who doesn't like orange:</p>
+        <div id="colour">
+          <a href="index_blue.html"><span class="blue">blue</span></a>
+          <a href="index_green.html"><span class="green">green</span></a>
+          <a href="index_purple.html"><span class="purple">purple</span></a>
+          <a href="index.html"><span class="orange">orange</span></a>
+        </div>**** -->
+        <!-- ****<h1>example elements</h1>
+        <h2>Bold Text</h2>
+        <p><strong>this is an example of bold text</strong></p>
+        <h2>Italics</h2>
+        <p><i>this is an example of italic text</i></p>
+        <h2>Links</h2>
+        <p><a href="index.html">this is an example link</a></p>
+        <h2>Block Quotes</h2>
+        <blockquote>
+          <p>
+            Some blockquote text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </blockquote>
+        <h2>Unordered Lists</h2>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+        <br />
+        <h2>Ordered Lists</h2>
+        <ol>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ol>**** -->
+         <!-- **** <br />
+        <h2>Images</h2>
+        <p>images can be placed on the left, in the center or on the right.</p>
+        <span class="left"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <span class="center"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <span class="right"><img src="style/graphic.jpg" alt="example graphic" /></span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+    </div>**** -->
+    <div id="footer">
+      copyright &copy; 2020 Sidi Mohamed Beillahi | <a href="#">med(DOT)beillahi(AT)gmail(DOT)com</a> | <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.dcarter.co.uk">Website Template by dcarter</a>
+    </div>
+  </div>
+  
+  <!-- Start of StatCounter Code for Default Guide -->
+  <script type="text/javascript">
+  var sc_project=11578522; 
+  var sc_invisible=1; 
+  var sc_security="d098f61a"; 
+  var scJsHost = (("https:" == document.location.protocol) ?
+  "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+  scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script>
+  <noscript><div class="statcounter"><a title="Web Analytics
+  Made Easy - StatCounter" href="http://statcounter.com/"
+  target="_blank"><img class="statcounter"
+  src="//c.statcounter.com/11578522/0/d098f61a/1/" alt="Web
+  Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of StatCounter Code for Default Guide -->
+ 
+</body>
+</html>

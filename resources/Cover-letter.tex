@@ -1,0 +1,97 @@
+\documentclass[a4paper, 11pt]{letter}
+
+%%%%%%%%%%%%%%%%%   CONSTANTS   %%%%%%%%%%%%%%%%%
+
+% AUTHOR INFORMATION
+\newcommand{\covertitle}{Sidi~Mohamed~Beillahi}                  % Title of cover letter
+\newcommand{\pdftitle}{Cover~letter~\covertitle}        % Title of PDF
+\newcommand{\pdfauthor}{\covertitle}                    % Author of PDF
+
+\newcommand{\authoraddress}{                            % Author's mailing address
+    9 B Boulevard Jourdan \\
+    75014 Paris }
+\newcommand{\authorweb}{https://beillahi.github.io/}           % Author's web site
+\newcommand{\authoremail}{med.beillahi@gmail.com}          % Author's email address
+\newcommand{\authortel}{+33~361~841~166}                % Author's phone number
+
+% STYLE ATTRIBUTES
+\newcommand{\linkcolor}{blue}               % Color of links
+\newcommand{\titlefontsize}{12pt}           % Font size of cover title
+\newcommand{\marginleft}{2.5cm}             % Left margin
+\newcommand{\marginright}{2.5cm}            % Right margin
+\newcommand{\margintop}{2.5cm}              % Top margin
+\newcommand{\marginbottom}{3cm}             % Bottom margin
+
+% Letter date
+\date{\today} % Put \today to have today's date
+
+%%%%%%%%%%%%%%%%%   PACKAGE IMPORTS   %%%%%%%%%%%%%%%%%
+\usepackage[a4paper, bindingoffset=0.0cm, left=\marginleft, right=\marginright, top=\margintop, bottom=\marginbottom, footskip=.25in]{geometry}
+\usepackage[bottom]{footmisc}   % This is to push footnotes to the bottom
+\usepackage{url}
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle=\pdftitle, pdfauthor=\pdfauthor]{hyperref}
+\hypersetup{linkcolor=\linkcolor, citecolor=\linkcolor, filecolor=black, urlcolor=\linkcolor}
+\pagenumbering{gobble}  % Comment out to show page numbers (1st page number will not be shown)
+
+
+\begin{document}
+
+\signature{Sidi Mohamed Beillahi}        % name for signature
+
+\longindentation=0pt            % needed to get closing flush left
+\let\raggedleft\raggedright     % needed to get date flush left
+
+% Reduce size of bullet character
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%%%%%%%%%%%%%%%%%   COMMAND DEFINITIONS   %%%%%%%%%%%%%%%%%
+
+% Make the title of the cover letter
+\newcommand{\makecovertitle}{
+    \begin{center}
+    {\Large\bf \covertitle}
+    \end{center}
+    \smallskip\hrule height 1pt
+}
+
+% Create list of contact information
+\newcommand{\contact}{
+    \begin{center}
+    \authoraddress \\
+    Email: \href{mailto:\authoremail}{\texttt{\authoremail}} \\
+    Web: \url{\authorweb}\\
+    Tel: \authortel
+    \end{center}
+}
+
+%%%%%%%%%%%%%%%%%   DOCUMENT   %%%%%%%%%%%%%%%%%
+
+\begin{letter}
+{   % Recipient
+\textbf{Professor Parosh Abdulla} \\
+Uppsala University \\
+Uppsala \\
+Sweden
+}
+
+\makecovertitle
+
+\contact
+
+\opening{Dear Professor Parosh Abdulla,}
+
+I am writing to apply for the position of researcher in the verification of systems with non-volatile memories.  
+I plan to receive my Ph.D.\ degree from the University of Paris in March 2021. My general research areas of interest
+include formal methods, algorithmic verification, and distributed systems.
+
+During my thesis, I have worked on the verification of robustness of application programs that run on top of distributed data bases against the weakening of the consistency model. Also, I have worked on the verification and synthesis of smart contracts and asynchronous programs. 
+
+
+\closing{Yours sincerely,}
+
+% Enclosures
+\encl{Curriculum vitae}
+
+\end{letter}
+
+\end{document}
