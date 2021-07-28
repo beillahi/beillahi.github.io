@@ -95,6 +95,13 @@
   \end{tabular*}
 } {}
 
+\newenvironment{publicationCore}[6]
+{ \item
+  \begin{tabular*}{7.5in}{p{6.3in}@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} & \textit{#3}\\ #4 & \textit{#5} \\ \textit{#6}&\\
+  \end{tabular*}
+} {}
+
 \newenvironment{publicationNote}[6]
 { \item
   \begin{tabular*}{7.5in}{p{6.3in}@{\extracolsep{\fill}}r}
@@ -169,10 +176,10 @@
       \\
       \textbf{\huge{Curriculum Vitae}} & \today\\*[2ex]
       \textbf{\large{Sidi Mohamed Beillahi}} & {\url{https://beillahi.github.io}}\\[0.5ex]
-      IRIF\\
-			Universit\'{e} de Paris\\
-      Paris, France\\
-      \href{mailto:med.beillahi@gmail.com}{med.beillahi@gmail.com}\\
+      Postdoctoral Researcher\\
+      University of Toronto\\
+      Toronto, Canada\\
+      \href{mailto:med.beillahi@gmail.com}{med.beillahi@gmail.com} & \emph{Tel}: \textrm{(1) 438 921 7395}\\
       %\href{mailto:beillahi@irif.fr}{beillahi@irif.fr}
       %& \emph{Tel}: \textrm{+33 (0) 7 61 84 11 66}\\
     \end{tabular*}
@@ -183,8 +190,7 @@
 \hypersetup{urlcolor=cyan}
 
 \begin{nonumregion}{\lbar{Mahogany}Summary}
-\item \hspace{1ex} \parbox{7.3in}{I am interested in algorithmic verification, formal methods, and applying programming
-	language techniques to improve asynchronous, concurrent, distributed, and quantum systems, blockchain, and smart contracts.}
+\item \hspace{1ex} \parbox{7.3in}{I am interested in algorithmic verification, formal methods, and programming languages. I develop new techniques to improve the reliability of software systems. I work in a variety of areas: asynchronous programming, distributed systems, smart contracts, and quantum circuits.}
 \end{nonumregion}
 
 \begin{nonumregion}{\lbar{red}Education}
@@ -350,8 +356,8 @@
 
   \begin{publication} {https://beillahi.github.io/papers/ESOP21.pdf}
 		{Checking Robustness Between Weak Transactional Consistency Models}
-		{Dec 2020} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea}
-		{In Proc. 30th European Symposium on Programming (ESOP), 2021}
+		{Dec 2020} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea} 
+		{In Proc. 30th European Symposium on Programming (ESOP), 2021} 
   \end{publication}
 
 	\begin{publication} {https://beillahi.github.io/papers/PLDI20.pdf}
@@ -444,7 +450,7 @@
   %\service{Projects supervised:}
 \end{itemregion} 
 
-\begin{itemregion}{\lbar{red}Advising}
+\begin{itemregion}{\lbar{red}Mentoring}
   %\service{Lecturer:}
   %\service{Guest Lectures:}
   %\service{Supervisions at Concordia University:}
@@ -453,7 +459,7 @@
   %\service{Projects supervised:}
 \end{itemregion} 
 
-
+\newpage
 \begin{itemregion}{\lbar{blue}Talks}
 
   \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
@@ -477,7 +483,7 @@
 
   \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
         \textbf{Checking Robustness Against Snapshot Isolation} \\
-        \hspace{1ex} ANR Project AdeCoDS Kick-off Meeting, Paris, France  & \textit{Nov 2019} \\
+        \hspace{1ex} ANR Project AdeCoDS Kick-off Meeting, IRIF, Universit\'{e} de Paris  & \textit{Nov 2019} \\
         \hspace{1ex} CAV 2019, New York City, USA  & \textit{Jul 2019}
       \end{tabular*}
 
