@@ -117,15 +117,12 @@
 \end{tabular*}
 } {}
 
-\newcommand{\reference}[7]{%
+\newcommand{\reference}[4]{%
   \begin{tabular}{@{}l@{}}%
     \textbf{#1}\\%
     #2\\%
     #3\\%
-    #4\\%
-    #5\\%
-    #6\\%
-    \href{mailto:#7}{#7}%
+    \href{mailto:#4}{#4}%
   \end{tabular}%
 }
 
@@ -305,8 +302,8 @@
 
 \begin{itemregion} {\lbar{blue}Service}
   \service{Co-organizer, IRIF Verification Seminar, Mar 2020 -- July 2020.}
-  \service{Artificat Evaluation Committees: POPL 2021, CAV 2021, OOPSLA 2021.}
-  \service{Sub-Reviewer: CAV 2020, VMCAI 2020, FTSCS 2016.}
+  \service{Artificat Evaluation Committees: POPL 2021, CAV 2021, OOPSLA 2021, POPL 2022.}
+  \service{Sub-Reviewer: FTSCS 2016, VMCAI 2020, CAV 2020.}
   \service{Student Volunteer: CAV 2016.}
 	%\service{Organizer, }
 	%\service{Editor,}
@@ -339,24 +336,30 @@
   \end{publication}
 \end{region}
 
-\begin{region} {\lbar{purple}Conference Publications}{{C}1}{8}
+\begin{region} {\lbar{purple}Conference Publications}{{C}1}{9}
 
+  
+  \begin{publication} {https://beillahi.github.io}
+		{SigVM: Toward Fully Autonomous Smart Contracts}
+		{2021} {Ryan Song, Zihan Zhao, Yuxi Cai, Sidi Mohamed Beillahi, Andreas Veneris, Fan Long}
+		{under submission, 2021}
+  \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/asynchrony.pdf}
 		{Automated Synthesis of Asynchronizations}
-		{Jul 2021} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea, Shuvendu Lahiri}
+		{2021} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea, Shuvendu Lahiri}
 		{under submission, 2021}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/BRAINS21.pdf}
 		{Smart Contracts Refinement for Gas Optimization}
-		{Jun 2021} {Keerthi Nelaturu, Sidi Mohamed Beillahi, Fan Long, Andreas Veneris}
+		{Sep 2021} {Keerthi Nelaturu, Sidi Mohamed Beillahi, Fan Long, Andreas Veneris}
 		{In Proc. 3rd Conference on Blockchain Research \& Applications for Innovative Networks and Services (BRAINS), 2021}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/ESOP21.pdf}
 		{Checking Robustness Between Weak Transactional Consistency Models}
-		{Dec 2020} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea} 
+		{Mar 2021} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea} 
 		{In Proc. 30th European Symposium on Programming (ESOP), 2021} 
   \end{publication}
 
@@ -455,6 +458,7 @@
   %\service{Guest Lectures:}
   %\service{Supervisions at Concordia University:}
   \service{Keerthi Nelaturu, PhD student, University of Toronto}
+  \service{Zihan Zhao, MASc student, University of Toronto}
   \service{Eric Keilty, MASc student, University of Toronto}
   %\service{Projects supervised:}
 \end{itemregion} 
@@ -505,40 +509,31 @@
 \end{itemregion}
 
 
-
+%\newpage
 \ifdefined\genrefs
 
-\begin{nonumregion}{\lbar{green}References}
+\begin{nonumregion}{\lbar{green}List of Referees}
   \refrow{
     \reference{Ahmed Bouajjani}
     {Professor}
-    {IRIF}
-    {Universit\'{e} de Paris}
-    {8 Place Aurélie Nemours}
-    {75013 Paris, France}
+    {University of Paris}
     {abou@irif.fr}
   }{
     \reference{Constantin Enea}
     {Associate Professor}
-    {IRIF}
-    {Universit\'{e} de Paris}
-    {8 Place Aurélie Nemours}
-    {75013 Paris, France}
+    {University of Paris}
     {cenea@irif.fr}
   }
   \refrow{
+    \reference{Parosh Aziz Abdulla}
+    {Chaired Professor}
+    {Uppsala University}
+    {parosh@it.uu.se}
+  }{
     \reference{Michael Emmi}
     {Applied Scientist}
     {Amazon Web Services}
     {michael.emmi@gmail.com}
-  }{
-    \reference{Sofi\`{e}ne Tahar}
-    {Professor}
-    {Department of Electrical and Computer Engineering}
-    {Concordia University}
-    {1455 de Maisonneuve Blvd. W}
-    {Montréal, Québec, Canada H3G 1M8}
-    {tahar@ece.concordia.ca}
   }
 \end{nonumregion}
 
