@@ -84,7 +84,7 @@ ol li
 }
 
 /* main container */
-#main{width: 780px; }
+#main{width: 850px; }
 
 /* links above the logo / footer */
 #links, #footer
@@ -167,13 +167,13 @@ ol li
 
 /* main content */
 #content
-{ width: 766px;
+{ width: 830px;
   overflow: hidden;
 } 
 
 /* column 1 - contains sidebar items */
 #column1
-{ width: 130px;
+{ width: 50px;
   margin: 22px 0px 0px 0px;
   float: right;
   padding: 19px 19px 15px 19px;
@@ -226,7 +226,7 @@ ol li
 /* column 2 - page content */
 #column2
 { text-align: justify;
-  width: 570px;
+  width: 650px;
   float: left;
   padding: 2px 3px 15px 19px;
 }
