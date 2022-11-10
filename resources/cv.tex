@@ -11,7 +11,10 @@
 \pagestyle{empty}
 \usepackage{mdwlist}
 
-\usepackage[left=.5cm,top=2cm,right=.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\usepackage[left=.5cm,top=2cm,right=.5cm,bottom=1.5cm,nohead]{geometry}
+
+%\usepackage[utf8]{inputenc}
+%\pagenumbering{arabic}
 
 \definecolor{darkgrey}{HTML}{333333}
 \definecolor{grey}{HTML}{4D4D4D}
@@ -248,6 +251,10 @@
   \begin{position}{Postdoctoral Researcher, University of Toronto}{Jun 2021 -- present}
 		{Advisors: Fan Long and Andreas Veneris}{Toronto, Canada}
   \end{position}
+  \positionnodesc{Mitacs Accelerate Postdoctoral Fellow, University of Toronto and Bank of Canada}{Sep 2022 -- present}
+		%{Advisors: Fan Long and Andreas Veneris}{Toronto, Canada}
+  %\end{position}
+  \positionnodesc{Course Instructor, University of Toronto}{Sep 2022 -- present}
   \begin{position}{Research Assistant, University of Paris}{Dec 2017 -- May 2021}
 		{Advisors: Ahmed Bouajjani and Constantin Enea}{Paris, France}
   \end{position}
@@ -294,6 +301,7 @@
 \end{itemregion}
 
 \begin{itemregion} {\lbar{blue}Grants and Scholarships}
+  \service{Smart Contract Research Forum Grant, 2022, USD 1000.}
   \service{VMW Scholarship Award for CAV 2016, USD 650.}
   \service{Concordia Graduate Student Association Conference Funding for CAV 2016, CAD 100.}
   \service{Concordia University Conference and Exposition Award for NFM 2016, CAD 1,000.}
@@ -307,6 +315,7 @@
   \service{Artificat Evaluation Committees: POPL 2021, CAV 2021, OOPSLA 2021, POPL 2022, OOPSLA 2022.}
   \service{Extended Review Committees: OOPSLA 2022.}
   \service{Sub-Reviewer: FTSCS 2016, VMCAI 2020, CAV 2020, Blockchain 2021, ICBC 2022, ICDCS 2022.}
+  \service{Journal Invited Reviewer:  IEEE Transactions on Network and Service Management}
   \service{Student Volunteer: CAV 2016.}
 	%\service{Organizer, }
 	%\service{Editor,}
@@ -321,12 +330,24 @@
 %
 %\end{region}
 
-\begin{region} {\lbar{purple}Journal Publications}{{J}1}{2}
+\begin{region} {\lbar{purple}Journal Publications}{{J}1}{4}
 
+  \begin{publicationNote}{https://arxiv.org/pdf/LMPTExt.pdf}
+    {LMPT: A Novel Authenticated Data Structure to Eliminate Storage Bottlenecks for High Performance Blockchains}
+    {2022}{Jemin Andrew Choi, \textbf{Sidi Mohamed Beillahi}, Srisht Fateh Singh, Panagiotis Michalopoulos, Peilun Li, Andreas Veneris, Fan Long}
+    {Under submission to IEEE Transactions on Network and Service Management}
+    {Invited special issue for best papers from ICBC 2022}
+  \end{publicationNote}
+
+  \begin{publication} {https://beillahi.github.io/papers/SIGVM.pdf}
+		{SigVM: Enabling Event-Driven Execution for Truly Decentralized Smart Contracts}
+		{Oct 2022} {Zihan Zhao, \textbf{Sidi Mohamed Beillahi}, Ryan Song, Yuxi Cai, Andreas Veneris, Fan Long}
+		{Proceedings of the ACM on Programming Languages, 6(OOPSLA2), 149:673 -- 149:698}
+  \end{publication}
 
   \begin{publicationNote}{https://arxiv.org/pdf/1906.12095v5.pdf}
     {Robustness Against Transactional Causal Consistency}
-    {Feb 2021}{Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea}
+    {Feb 2021}{\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea}
     {Logical Methods in Computer Science, 17(1): 12:1 -- 12:42}
     {Invited special issue for selected papers from CONCUR 2019}
   \end{publicationNote}
@@ -334,118 +355,112 @@
 
   \begin{publication}{https://beillahi.github.io/papers/FAC19.pdf}
     {A Modeling and Verification Framework for Optical Quantum Circuit}
-    {Mar 2019}{Sidi Mohamed Beillahi, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
+    {Mar 2019}{\textbf{Sidi Mohamed Beillahi}, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
     {Formal Aspects of Computing, 31(3): 321 -- 351}
   \end{publication}
 \end{region}
-
-\begin{region} {\lbar{purple}Conference Publications}{{C}1}{13}
+\newpage
+\begin{region} {\lbar{purple}Conference Publications}{{C}1}{12}
 
   \begin{publication} {https://arxiv.org/pdf/2206.10708.pdf}
-		{FlashSyn: Flash Loan Attack Synthesis via Counter Example Driven Approximation} 
-		{2022} {Zhiyang Chen, Sidi Mohamed Beillahi, Fan Long}
-		{under prepartion, https://arxiv.org/abs/2206.10708}
+		{FlashSyn: Flash Loan Attack Synthesis via Counterexample-Driven Approximation} 
+		{2022} {Zhiyang Chen, \textbf{Sidi Mohamed Beillahi}, Fan Long}
+		{under submission, https://arxiv.org/abs/2206.10708}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io}
 		{LVMT: An Efficient Authenticated Storage for Blockchain} 
-		{2022} {Chenxing Li, Sidi Mohamed Beillahi, Guang Yang, Ming Wu, Wei Xu, Fan Long}
+		{2022} {Chenxing Li, \textbf{Sidi Mohamed Beillahi}, Guang Yang, Ming Wu, Wei Xu, Fan Long}
 		{under submission, 2022}
-  \end{publication}
-  
-  \begin{publication} {https://beillahi.github.io/papers/SIGVM.pdf}
-		{SigVM: Enabling Event-Driven Execution for Truly Decentralized Smart Contracts}
-		{Dec 2022} {Zihan Zhao, Sidi Mohamed Beillahi, Ryan Song, Yuxi Cai, Andreas Veneris, Fan Long}
-		{ACM SIGPLAN conference on Object-oriented Programming, Systems, Languages, and Applications (OOPSLA) 2022, (conditionally accepted)}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/async.pdf}
 		{Automated Synthesis of Asynchronizations}
-		{Dec 2022} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea, Shuvendu Lahiri}
+		{Dec 2022} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea, Shuvendu Lahiri}
 		{29th Static Analysis Symposium (SAS), 2022}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/2022040426.pdf}
 		{Automated Auditing of Price Gouging TOD Vulnerabilities in Smart Contracts}
-		{May 2022} {Sidi Mohamed Beillahi, Eric Keilty, Keerthi Nelaturu, Andreas Veneris, Fan Long}
+		{May 2022} {\textbf{Sidi Mohamed Beillahi}, Eric Keilty, Keerthi Nelaturu, Andreas Veneris, Fan Long}
 		{In Proc. IEEE International Conference on Blockchain and Cryptocurrency (ICBC), 2022}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/2022044041.pdf}
 		{LMPTs: Eliminating Storage Bottlenecks for Processing Blockchain Transactions}
-		{May 2022} {Jemin Andrew Choi, Sidi Mohamed Beillahi, Peilun Li, Andreas Veneris, Fan Long}
+		{May 2022} {Jemin Andrew Choi, \textbf{Sidi Mohamed Beillahi}, Peilun Li, Andreas Veneris, Fan Long}
 		{In Proc. IEEE International Conference on Blockchain and Cryptocurrency (ICBC), 2022}
     {\\ \textcolor{red}{IEEE ICBC Distinguished Paper Award.}}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/BRAINS21.pdf}
 		{Smart Contracts Refinement for Gas Optimization}
-		{Sep 2021} {Keerthi Nelaturu, Sidi Mohamed Beillahi, Fan Long, Andreas Veneris}
+		{Sep 2021} {Keerthi Nelaturu, \textbf{Sidi Mohamed Beillahi}, Fan Long, Andreas Veneris}
 		{In Proc. 3rd Conference on Blockchain Research \& Applications for Innovative Networks and Services (BRAINS), 2021}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/ESOP21.pdf}
 		{Checking Robustness Between Weak Transactional Consistency Models}
-		{Mar 2021} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea} 
+		{Mar 2021} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea} 
 		{In Proc. 30th European Symposium on Programming (ESOP), 2021} 
   \end{publication}
 
 	\begin{publication} {https://beillahi.github.io/papers/PLDI20.pdf}
 		{Behavioral Simulation for Smart Contracts}
-		{Jun 2020} {Sidi Mohamed Beillahi, Gabriela Ciocarlie, Michael Emmi, Constantin Enea}
+		{Jun 2020} {\textbf{Sidi Mohamed Beillahi}, Gabriela Ciocarlie, Michael Emmi, Constantin Enea}
 		{In Proc. 41st annual ACM SIGPLAN conference on Programming Language Design and Implementation (PLDI), 2020}
   \end{publication}
 
 	\begin{publication} {https://beillahi.github.io/papers/CONCUR19.pdf}
 		{Robustness Against Transactional Causal Consistency}
-		{Sep 2019} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea}
+		{Sep 2019} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea}
     {In Proc. 30th International Conference on Concurrency Theory (CONCUR), 2019}
     {\\ \textcolor{red}{Invited to a Journal Special Issue for Selected CONCUR 2019 Papers.}}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/CAV19.pdf}
     {Checking Robustness Against Snapshot Isolation}
-    {Jul 2019} {Sidi Mohamed Beillahi, Ahmed Bouajjani, Constantin Enea}
+    {Jul 2019} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea}
     {In Proc. 31st International Conference on Computer Aided Verification (CAV), 2019}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/NFM16.pdf}
     {Hierarchical Verification of Quantum Circuits}
-    {Jun 2016} {Sidi Mohamed Beillahi, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
+    {Jun 2016} {\textbf{Sidi Mohamed Beillahi}, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
     {In Proc. 8th International Symposium NASA Formal Methods (NFM), 2016}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/ICFEM15.pdf}
     {Formal Analysis of Power Electronic Systems}
-    {Nov 2015} {Sidi Mohamed Beillahi, Umair Siddique, Sofi\`{e}ne Tahar}
+    {Nov 2015} {\textbf{Sidi Mohamed Beillahi}, Umair Siddique, Sofi\`{e}ne Tahar}
     {In Proc. 17th International Conference on Formal Engineering Methods (ICFEM), 2015}
   \end{publication}
 
 \end{region}
 
-
+%\newpage
 \begin{region} {\lbar{purple}Workshop Publications}{{W}1}{3}
 
 	\begin{publication}{https://beillahi.github.io/papers/NSV16.pdf}
 		{Formal Analysis of Engineering Systems Based on Signal-Flow-Graph Theory}
-		{Jul 2016}{Sidi Mohamed Beillahi, Umair Siddique, Sofi\`{e}ne Tahar}
+		{Jul 2016}{\textbf{Sidi Mohamed Beillahi}, Umair Siddique, Sofi\`{e}ne Tahar}
 		{In Proc. 9th International Workshop Numerical Software Verification (NSV-CAV), 2016}
   \end{publication}
 
 	\begin{publication}{https://beillahi.github.io/papers/FMICS15.pdf}
 		{On the Formal Analysis of Photonic Signal Processing Systems}
-		{Jun 2015}{Umair Siddique, Sidi Mohamed Beillahi, Sofi\`{e}ne Tahar}
+		{Jun 2015}{Umair Siddique, \textbf{Sidi Mohamed Beillahi}, Sofi\`{e}ne Tahar}
     {In Proc. 20th International Workshop Formal Methods for Industrial Critical Systems (FMICS), 2015}
   \end{publication}
   
   \begin{publication}{https://beillahi.github.io/papers/ARW15.pdf}
 		{A Tool for the Formal Verification of Quantum Optical Computing Systems}
-		{Apr 2015}{Sidi Mohamed Beillahi, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
+		{Apr 2015}{\textbf{Sidi Mohamed Beillahi}, Mohamed Yousri Mahmoud, Sofi\`{e}ne Tahar}
     {In Proc. Automated Reasoning Workshop (ARW), 2015}
   \end{publication}
   
 \end{region}
-
+%\newpage
 %\begin{region} {\lbar{purple}Technical Reports and Drafts}{{T}1}{1}
 %
 %  \begin{publication}{https://beillahi.github.io}
@@ -463,7 +478,7 @@
   %\service{Supervisions at Concordia University:}
   \service{Course Instructor at University of Toronto}
   \begin{itemize}
-    \service{ECE345H1F: Algorithms \& Data Structures, Sep 2022 -- Dec 2022.}
+    \service{ECE345H1F: Algorithms \& Data Structures for 3rd Year Computer Engineering Students, Sep 2022 -- Dec 2022.}
   \end{itemize}
 
   \service{Teaching Assistantships at University of Paris}
@@ -493,13 +508,22 @@
   \service{Zihan Zhao, MASc student, University of Toronto}
   \service{Zhiyang Chen, MASc student, University of Toronto}
   \service{Eric Keilty, MASc student, University of Toronto}
-  \service{Srisht Fateh Singh, MASc student, University of Toronto}
-  \service{Hossein Ghotbaddini, MASc student, University of Toronto}
+  %\service{Srisht Fateh Singh, MASc student, University of Toronto}
+  %\service{Hossein Ghotbaddini, MASc student, University of Toronto}
+  \service{Xun Deng, MASc student, University of Toronto}
   %\service{Projects supervised:}
 \end{itemregion} 
 
 %\newpage
 \begin{itemregion}{\lbar{blue}Talks}
+
+
+  
+
+  \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+    \textbf{SigVM: Enabling Event-Driven Execution for Truly Decentralized Smart Contracts} \\
+    \hspace{1ex} Research Meeting with Bank of Canada, University of Toronto  & \textit{Jul 2022}
+  \end{tabular*}
 
   \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
     \textbf{Automated Auditing of Price Gouging TOD Vulnerabilities in Smart Contracts} \\
