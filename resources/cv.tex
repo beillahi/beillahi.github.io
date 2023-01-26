@@ -120,12 +120,13 @@
 \end{tabular*}
 } {}
 
-\newcommand{\reference}[4]{%
+\newcommand{\reference}[5]{%
   \begin{tabular}{@{}l@{}}%
     \textbf{#1}\\%
     #2\\%
     #3\\%
-    \href{mailto:#4}{#4}%
+    {\url{#4}}\\%
+    \href{mailto:#5}{#5}%
   \end{tabular}%
 }
 
@@ -190,7 +191,7 @@
 \hypersetup{urlcolor=cyan}
 
 \begin{nonumregion}{\lbar{Mahogany}Summary}
-\item \hspace{1ex} \parbox{7.3in}{I am interested in algorithmic verification, formal verification, and programming languages. I develop new techniques to improve the reliability of software systems. I work in a variety of application areas including concurrent programs, distributed systems, blockchain, smart contracts, and asynchronous programs.}
+\item \hspace{1ex} \parbox{7.3in}{I am interested in algorithmic verification, formal methods, programming languages, and software verification. I develop new techniques to improve the reliability of software systems. I work in a variety of application areas including concurrent programs, distributed systems, blockchain, smart contracts, and asynchronous programs.}
 \end{nonumregion}
 
 \begin{nonumregion}{\lbar{red}Education}
@@ -493,6 +494,7 @@
   %\service{Supervisions at Concordia University:}
   \service{Course Instructor at University of Toronto}
   \begin{itemize}
+    \service{CSC323H1S: Principles of Programming Languages for 3rd Year Computer Science Students, Jan 2023 -- Apr 2023.}
     \service{ECE345H1F: Algorithms \& Data Structures for 3rd Year Computer Engineering Students, Sep 2022 -- Dec 2022.}
   \end{itemize}
 
@@ -601,24 +603,29 @@
   \refrow{
     \reference{Ahmed Bouajjani}
     {Professor}
-    {University of Paris}
+    {University of Paris. France}
+    {https://www.irif.fr/~abou/}
     {abou@irif.fr}
   }{
     \reference{Constantin Enea}
     {Professor}
-    {Ecole Polytechnique}
-    {cenea@irif.fr}
+    {Ecole Polytechnique, LIX. France}
+    {http://www.lix.polytechnique.fr/~cenea/}
+    {cenea@lix.polytechnique.fr}
   }
   \refrow{
     \reference{Parosh Aziz Abdulla}
     {Chaired Professor}
-    {Uppsala University}
+    {Uppsala University. Sweden}
+    {https://user.it.uu.se/~parosh/}
     {parosh@it.uu.se}
   }{
     \reference{Michael Emmi}
     {Applied Scientist}
-    {Amazon Web Services}
-    {michael.emmi@gmail.com}
+    {Amazon Web Services. USA}
+    {https://michael-emmi.github.io/}
+    {emmmi@amazon.com}
+    %{michael.emmi@gmail.com}
   }
 \end{nonumregion}
 
