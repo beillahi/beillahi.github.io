@@ -33,9 +33,9 @@
 \newcommand{\lbar}[1]{{\color{#1}\ding{118}}\hspace*{2pt}}
 
 \hypersetup{
-  colorlinks=true,
+  colorlinks=false,
   urlcolor=Sepia,
-  linkcolor=RoyalBlue,
+  %linkcolor=RoyalBlue,
   pdfborder= 0 0 0,
   bookmarks=false,
   pdftitle={Sidi Mohamed Beillahi - CV},
@@ -170,16 +170,16 @@
 
 \begin{tikzpicture}[remember picture,overlay]
   \hypersetup{urlcolor=zest}
-  \node [rectangle, fill=grey, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+  \node [rectangle, fill=grey, anchor=north, minimum width=\paperwidth, minimum height=3.8cm] (box) at (current page.north){};
   \node [anchor=center] (name) at (box) {%
     \color{white}%
     \begin{tabular*}{7.5in}{@{\extracolsep{\fill}}lr}
       \\
-      \textbf{\huge{Curriculum Vitae}} & \today\\*[2ex]
-      \textbf{\large{Sidi Mohamed Beillahi}} & {\url{https://beillahi.github.io}}\\[0.5ex]
-      Postdoctoral Researcher\\
-      University of Toronto\\
-      Toronto, Canada\\
+      \textbf{\huge{Curriculum Vitae}} & \\*[2ex] %\today
+      \textbf{\large{Sidi Mohamed Beillahi}} & {\url{https://beillahi.github.io}}\\[0.3ex]
+      Postdoctoral Researcher & {\href{https://scholar.google.com/citations?user=qd4lM94AAAAJ}{Google Scholar}}\\[0.3ex]
+      University of Toronto & {\href{https://www.linkedin.com/in/sidi-mohamed-beillahi}{Linkedin}}\\[0.3ex]
+      %Toronto, Canada\\
       %\href{mailto:med.beillahi@gmail.com}{med.beillahi@gmail.com} & \emph{Tel}: \textrm{(1) 438 921 7395}\\
       \href{mailto:sm.beillahi@utoronto.ca}{sm.beillahi@utoronto.ca} & \emph{Tel}: \textrm{(1) 438 921 7395}\\
       %\href{mailto:beillahi@irif.fr}{beillahi@irif.fr}
@@ -191,11 +191,11 @@
 
 \hypersetup{urlcolor=cyan}
 
-\begin{nonumregion}{\lbar{Mahogany}Summary}
-\item \hspace{1ex} \parbox{7.3in}{I am interested in algorithmic verification, formal methods, programming languages, and software verification. I develop new techniques to improve the reliability of software systems. I work in a variety of application areas including concurrent programs, distributed systems, blockchain, smart contracts, and asynchronous programs.}
+\begin{nonumregion}{\lbar{black}Research Interests}
+\item \hspace{1ex} \parbox{7.3in}{Software verification; Software security; Distributed systems; Blockchain; Formal verification; Algorithmic verification; Programming languages; Program synthesis.}
 \end{nonumregion}
 
-\begin{nonumregion}{\lbar{red}Education}
+\begin{nonumregion}{\lbar{black}Education}
   \begin{education}{Ph.D. --- Computer Science}
     {Dec 2017 -- Mar 2021}
     {}
@@ -243,7 +243,7 @@
 
 \end{nonumregion}
 
-\begin{nonumregion} {\lbar{orange}Experience}
+\begin{nonumregion} {\lbar{black}Experience}
 	%\positionnodesc{Assistant Professor, Indian Institute of Technology, Madras}{Jan 2019 -- present}
   %\begin{position}{Senior Research Associate, University of Cambridge}{Nov 2017 -- Dec 2018}{Advisors: Alan Mycroft, Anil Madhavapeddy}{Cambridge, UK}
   %\end{position}
@@ -260,7 +260,7 @@
   %\end{position}
   \positionnodesc{Research Consultant, Conflux Network}{Dec 2021 -- present}
   \positionnodesc{Course Instructor, University of Toronto}{Sep 2022 -- Apr 2023}
-  \begin{position}{Research Assistant, University of Paris}{Dec 2017 -- May 2021}
+  \begin{position}{Research Assistant, Institut de Recherche en Informatique Fondamentale - University of Paris}{Dec 2017 -- May 2021}
 		{Advisors: Ahmed Bouajjani and Constantin Enea}{Paris, France}
   \end{position}
   \positionnodesc{Teaching Assistant, University of Paris}{Sep 2018 -- Jan 2021}
@@ -299,7 +299,7 @@
 %  \item \hspace{1ex} \parbox{7.3in}{C\#, C/C++, Python, Ocaml, Solidity, Typescript, Boogie, HOL Light, Civl verifier, System Verilog, VHDL, assembly language (Intel, PIC, Cortex M, and EVM), Latex.}
 %\end{nonumregion}
 
-\begin{itemregion} {\lbar{blue}Awards and Recognitions}
+\begin{itemregion} {\lbar{black}Awards and Recognitions}
   \service{IEEE ICBC Distinguished Paper Award, 2022.}
   \service{Invited to a Journal Special Issue for Selected CONCUR 2019 Papers, 2019.}
   \service{Best Undergraduate Thesis, Tunisia Polytechnic School, 2014.}
@@ -309,7 +309,7 @@
   \service{Ranked 1st in the National Bac Exam in Mathematics, Mauritania, 2009.}
 \end{itemregion}
 
-\begin{itemregion} {\lbar{blue}Grants and Scholarships}
+\begin{itemregion} {\lbar{black}Grants and Scholarships}
   \service{NSERC Postdoctoral Fellowship, 2022 -- 2024, CAD 90,000.}
   \service{Smart Contract Research Forum Grant, 2022, USD 1,000.}
   \service{VMW Scholarship Award for CAV 2016, USD 650.}
@@ -320,11 +320,11 @@
   \service{Scholarship Award to Participate in the International Mathematical Olympiad, Mauritania, 2009, EUR 1,000.}
 \end{itemregion}
 
-\begin{itemregion} {\lbar{blue}Service}
-  \service{Co-organizer, IRIF Verification Seminar, Mar 2020 -- July 2020.}
-  \service{Artificat Evaluation Committees: POPL 2021, CAV 2021, OOPSLA 2021, POPL 2022, OOPSLA 2022.}
+\begin{itemregion} {\lbar{black}Service}
+  \service{Co-organizer, Institut de Recherche en Informatique Fondamentale Verification Seminar, Mar 2020 -- July 2020.}
+  \service{Artificat Evaluation Committees: POPL 2021-2022, CAV 2021, OOPSLA 2021-2022.}
   \service{Extended Review Committees: OOPSLA 2022.}
-  \service{Sub-Reviewer: FTSCS 2016, VMCAI 2020, CAV 2020, Blockchain 2021, ICBC 2022, ICDCS 2022.}
+  \service{Sub-Reviewer: FTSCS 2016, VMCAI 2020, CAV 2020, Blockchain 2021, ICDCS 2022, ICBC 2022-2023, TACAS 2024.}
   \service{Journal Invited Reviewer:  IEEE Transactions on Network and Service Management}
   \service{Student Volunteer: CAV 2016.}
 	%\service{Organizer, }
@@ -340,7 +340,14 @@
 %
 %\end{region}
 
-\begin{region} {\lbar{purple}Journal Publications}{{J}1}{4}
+\begin{region} {\lbar{black}Journal Publications}{{J}1}{5}
+
+  \begin{publicationNote} {https://beillahi.github.io}
+		{LVMT: An Efficient Authenticated Storage for Blockchain} 
+		{2023} {Chenxing Li, \textbf{Sidi Mohamed Beillahi}, Guang Yang, Ming Wu, Wei Xu, Fan Long}
+		{Under submission to the ACM Transactions on Storage}
+    {Invited special issue for best storage papers from OSDI 2023}
+  \end{publicationNote}
 
   \begin{publicationNote}{https://arxiv.org/pdf/LMPTExt.pdf}
     {LMPT: A Novel Authenticated Data Structure to Eliminate Storage Bottlenecks for High Performance Blockchains}
@@ -349,7 +356,7 @@
     {Invited special issue for best papers from ICBC 2022}
   \end{publicationNote}
 
-  \begin{publication} {https://beillahi.github.io/papers/SIGVM.pdf}
+  \begin{publication} {https://beillahi.github.io/papers/OOPSLA22.pdf}
 		{SigVM: Enabling Event-Driven Execution for Truly Decentralized Smart Contracts}
 		{Oct 2022} {Zihan Zhao, \textbf{Sidi Mohamed Beillahi}, Ryan Song, Yuxi Cai, Andreas Veneris, Fan Long}
 		{Proceedings of the ACM on Programming Languages, 6(OOPSLA2), 149:673 -- 149:698}
@@ -369,13 +376,13 @@
     {Formal Aspects of Computing, 31(3): 321 -- 351}
   \end{publication}
 \end{region}
-\newpage
-\begin{region} {\lbar{purple}Conference Publications}{{C}1}{17}
+%\newpage
+\begin{region} {\lbar{black}Conference Publications}{{C}1}{17}
 
   \begin{publication} {https://arxiv.org/pdf/2206.10708.pdf}
 		{FlashSyn: Flash Loan Attack Synthesis via Counterexample-Driven Approximation} 
 		{2023} {Zhiyang Chen, \textbf{Sidi Mohamed Beillahi}, Fan Long}
-		{under submission, https://arxiv.org/abs/2206.10708}
+		{Conditionally accepted to the 46th International Conference on Software Engineering (ICSE 2024)}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io}
@@ -389,29 +396,28 @@
 		{2023} {Zhiyang Chen, Ye Liu, \textbf{Sidi Mohamed Beillahi}, Yi Li, Fan Long}
 		{under submission}
   \end{publication}
-  
 
-  \begin{publication} {https://beillahi.github.io}
+  \begin{publication} {https://beillahi.github.io/papers/OSDI23.pdf}
 		{LVMT: An Efficient Authenticated Storage for Blockchain} 
 		{July 2023} {Chenxing Li, \textbf{Sidi Mohamed Beillahi}, Guang Yang, Ming Wu, Wei Xu, Fan Long}
 		{In Proc. 17th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2023}
-    {\\ \textcolor{red}{Invited to a Special Issue of the ACM Transactions on Storage Journal for Selected OSDI 2023 Papers.}}
+    {\\ \textbf{Invited to a Special Issue of the ACM Transactions on Storage Journal for Selected OSDI 2023 Papers.}}
   \end{publication}
 
-  \begin{publication} {https://beillahi.github.io}
+  \begin{publication} {https://beillahi.github.io/papers/DAPPS23.pdf}
 		{A Robust Front-Running Methodology for Malicious Flash-Loan DeFi Attacks} 
 		{July 2023} {Xun Deng, Zihan Zhao, \textbf{Sidi Mohamed Beillahi}, Han Du, Cyrus Minwalla, Keerthi Nelaturu, 
     Andreas Veneris, Fan Long}
 		{In Proc. IEEE International Conference on Decentralized Applications and Infrastructures (DAPPS), 2023}
   \end{publication}
  
-  \begin{publication} {https://beillahi.github.io}
+  \begin{publication} {https://beillahi.github.io/papers/ICBC23.pdf}
 		{Möbius: an Atomic State Sharding Design for Account-Based Blockchains} 
 		{May 2023} {Srisht Fateh Singh, Panagiotis Michalopoulos, \textbf{Sidi Mohamed Beillahi}, Andreas Veneris, Fan Long}
 		{In Proc. IEEE International Conference on Blockchain and Cryptocurrency (ICBC), 2023}
   \end{publication}
 
-  \begin{publication} {https://beillahi.github.io}
+  \begin{publication} {https://beillahi.github.io/papers/NETYS23.pdf}
 		{Comparing Causal Convergence Consistency Models}
 		{May 2023} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea}
 		{In Proc. 11th International Conference on Networked Systems (NETYS), 2023}
@@ -433,7 +439,7 @@
 		{LMPTs: Eliminating Storage Bottlenecks for Processing Blockchain Transactions}
 		{May 2022} {Jemin Andrew Choi, \textbf{Sidi Mohamed Beillahi}, Peilun Li, Andreas Veneris, Fan Long}
 		{In Proc. IEEE International Conference on Blockchain and Cryptocurrency (ICBC), 2022}
-    {\\ \textcolor{red}{IEEE ICBC Distinguished Paper Award.}}
+    {\\ \textbf{IEEE ICBC Distinguished Paper Award.}}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/BRAINS21.pdf}
@@ -458,7 +464,7 @@
 		{Robustness Against Transactional Causal Consistency}
 		{Sep 2019} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea}
     {In Proc. 30th International Conference on Concurrency Theory (CONCUR), 2019}
-    {\\ \textcolor{red}{Invited to a Special Issue of the Logical Methods in Computer Science Journal for Selected CONCUR 2019 Papers.}}
+    {\\ \textbf{Invited to a Special Issue of the Logical Methods in Computer Science Journal for Selected CONCUR 2019 Papers.}}
   \end{publication}
 
   \begin{publication} {https://beillahi.github.io/papers/CAV19.pdf}
@@ -482,7 +488,7 @@
 \end{region}
 
 %\newpage
-\begin{region} {\lbar{purple}Workshop Publications}{{W}1}{3}
+\begin{region} {\lbar{black}Workshop Publications}{{W}1}{3}
 
 	\begin{publication}{https://beillahi.github.io/papers/NSV16.pdf}
 		{Formal Analysis of Engineering Systems Based on Signal-Flow-Graph Theory}
@@ -515,11 +521,11 @@
 %\end{region}
 
 %\begin{itemregion}{\lbar{red}Teaching/Advising}
-\begin{itemregion}{\lbar{red}Teaching}
+\begin{itemregion}{\lbar{black}Teaching}
   %\service{Lecturer:}
   %\service{Guest Lectures:}
   %\service{Supervisions at Concordia University:}
-  \service{Course Instructor at University of Toronto}
+  \service{Course Co-Instructor at University of Toronto}
   \begin{itemize}
     \service{CSC323H1S: Principles of Programming Languages for 3rd Year Computer Science Students, Jan 2023 -- Apr 2023.}
     \service{ECE345H1F: Algorithms \& Data Structures for 3rd Year Computer Engineering Students, Sep 2022 -- Dec 2022.}
@@ -544,22 +550,31 @@
   %\service{Projects supervised:}
 \end{itemregion} 
 
-\begin{itemregion}{\lbar{red}Supervision}
+
+\begin{nonumregion}{\lbar{black}Professional Affiliations}
+  \item \hspace{1ex} \parbox{7.3in}{ACM (2020); IEEE (2022).}
+\end{nonumregion}
+
+\newpage
+
+\begin{itemregion}{\lbar{black}Supervision}
   %\service{Lecturer:}
   %\service{Guest Lectures:}
   %\service{Supervisions at Concordia University:}
   \service{Keerthi Nelaturu, Ph.D. student, University of Toronto}
-  \service{Zihan Zhao, MASc student, University of Toronto}
-  \service{Zhiyang Chen, MASc student, University of Toronto}
-  \service{Eric Keilty, MASc student, University of Toronto}
-  %\service{Srisht Fateh Singh, MASc student, University of Toronto}
-  \service{Hossein Ghotbaddini, MASc student, University of Toronto}
+  \service{Zihan Zhao, MASc student, University of Toronto - graduated in 2022}
+  \service{Zhiyang Chen, Ph.D. student, University of Toronto}
+  \service{Eric Keilty, MASc student, University of Toronto - graduated in 2023}
+  \service{Srisht Fateh Singh, MASc student, University of Toronto - graduated in 2023}
+  \service{Hossein Ghotbaddini, MASc student, University of Toronto - graduated in 2023}
   \service{Xun Deng, MASc student, University of Toronto}
+  \service{Vladyslav Nekriach, MASc student, University of Toronto}
+  \service{Jacky Zhou, MASc student, University of Toronto}
   %\service{Projects supervised:}
 \end{itemregion} 
 
 %\newpage
-\begin{itemregion}{\lbar{blue}Talks}
+\begin{itemregion}{\lbar{black}Talks}
 
 
   \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
@@ -621,7 +636,15 @@
     {May 2015}{Hardware Verification Group Meeting}{Concordia University}
   \end{talk}
 \end{itemregion}
-
+\begin{itemregion}{\lbar{black}Recent media articles on the work published in C17}
+  \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+   \href{https://www.coindesk.com/tech/2023/08/23/blockchain-security-firm-quantstamp-hopes-to-battle-flash-loan-attacks-with-new-service/}{Blockchain Security Firm Quantstamp Hopes to Battle Flash Loan Attacks With New Service} & \textit{CoinDesk - Aug 2023}
+  \end{tabular*}
+  
+  \item \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+    \href{https://www.theblock.co/post/246956/quantstamp-tool-to-thwart-defi-flash-loan-attacks}{Quantstamp unveils tool to detect DeFi flash loan vulnerabilities} & \textit{THE BLOCK - Aug 2023}
+   \end{tabular*}
+  \end{itemregion} 
 
 %\newpage
 \ifdefined\genrefs
