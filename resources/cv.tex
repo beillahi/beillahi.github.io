@@ -120,12 +120,21 @@
 \end{tabular*}
 } {}
 
-\newcommand{\reference}[5]{%
+\newcommand{\reference}[4]{%
   \begin{tabular}{@{}l@{}}%
     \textbf{#1}\\%
     #2\\%
     #3\\%
-    {\url{#4}}\\%
+    \href{mailto:#4}{#4}%
+  \end{tabular}%
+}
+
+\newcommand{\referencetwo}[5]{%
+  \begin{tabular}{@{}l@{}}%
+    \textbf{#1}\\%
+    #2\\%
+    #3\\%
+    #4\\%
     \href{mailto:#5}{#5}%
   \end{tabular}%
 }
@@ -144,6 +153,14 @@
 
 \newcommand{\refrow}[2]{%
 \item \begin{tabular*}{0.9\textwidth}{@{}p{3.0in}@{\hspace*{0.3in}}p{3.0in}@{}} #1 & #2 \end{tabular*}
+\vspace*{1ex}}
+
+\newcommand{\refrowone}[1]{%
+\item \begin{tabular*}{0.9\textwidth}{@{}p{3.0in}@{\hspace*{0.3in}}p{3.0in}@{}} #1 &  \end{tabular*}
+\vspace*{1ex}} 
+
+\newcommand{\refrowtwo}[2]{%
+\item \begin{tabular*}{0.9\textwidth}{@{}p{3.0in}@{\hspace*{0.7in}}p{3.0in}@{}} #1 & #2 \end{tabular*}
 \vspace*{1ex}}
 
 \newenvironment{region}[3]{%
@@ -424,7 +441,7 @@
 		{In Proc. 11th International Conference on Networked Systems (NETYS), 2023}
   \end{publication}
 
-  \begin{publication} {https://beillahi.github.io/papers/async.pdf}
+  \begin{publication} {https://beillahi.github.io/papers/SAS22.pdf}
 		{Automated Synthesis of Asynchronizations}
 		{Dec 2022} {\textbf{Sidi Mohamed Beillahi}, Ahmed Bouajjani, Constantin Enea, Shuvendu Lahiri}
 		{In Proc. 29th Static Analysis Symposium (SAS), 2022}
@@ -650,33 +667,24 @@
 %\newpage
 \ifdefined\genrefs
 
-\begin{nonumregion}{\lbar{green}List of Referees}
-  \refrow{
-    \reference{Ahmed Bouajjani}
+\begin{nonumregion}{\lbar{black}Contacts of Three Reference Letter Writers}
+  \refrowtwo{
+    \referencetwo{Ahmed Bouajjani}
     {Professor}
-    {Paris Diderot University. France}
-    {https://www.irif.fr/~abou/}
+    {Paris Diderot University}
+    {Senior member of the Institut Universitaire de France}
     {abou@irif.fr}
   }{
-    \reference{Constantin Enea}
-    {Professor}
-    {Ecole Polytechnique, LIX. France}
-    {http://www.lix.polytechnique.fr/~cenea/}
-    {cenea@lix.polytechnique.fr}
+    \reference{Andreas Veneris}
+    {Professor and Connaught Scholar}
+    {University of Toronto}
+    {veneris@eecg.toronto.edu}
   }
-  \refrow{
-    \reference{Parosh Aziz Abdulla}
-    {Chaired Professor}
-    {Uppsala University. Sweden}
-    {https://user.it.uu.se/~parosh/}
-    {parosh@it.uu.se}
-  }{
-    \reference{Michael Emmi}
-    {Applied Scientist}
-    {Amazon Web Services. USA}
-    {https://michael-emmi.github.io/}
-    {emmmi@amazon.com}
-    %{michael.emmi@gmail.com}
+  \refrowone{
+    \reference{Fan Long}
+    {Assistant Professor}
+    {University of Toronto}
+    {fanl@cs.toronto.edu}
   }
 \end{nonumregion}
 
